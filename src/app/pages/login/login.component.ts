@@ -26,7 +26,7 @@ export class LoginComponent implements OnInit {
           console.log('success', res);
         },
         (err) => {
-          this.info = JSON.stringify(err.error, undefined, 2);
+          this.info = JSON.stringify(err, undefined, 2);
           console.log('error', err);
         }
       );
