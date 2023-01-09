@@ -1,0 +1,35 @@
+<section id="login">
+  <div class="inner">
+    <form
+      #userForm="ngForm"
+      class="user-form"
+      (ngSubmit)="handleSubmit(userForm.value)"
+    >
+      <div class="form-control">
+        <label for="username">Username</label>
+        <input
+          type="text"
+          id="username"
+          name="username"
+          placeholder=""
+          ngModel
+        />
+      </div>
+
+      <div class="form-control">
+        <label for="password">Password</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder=""
+          ngModel
+        />
+      </div>
+      <button type="submit">Submit</button>
+      <div class="info">
+        <pre>{{ info || "" }}</pre>
+      </div>
+    </form>
+  </div>
+</section>

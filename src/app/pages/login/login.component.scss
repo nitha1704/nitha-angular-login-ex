@@ -1,0 +1,33 @@
+#login {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .inner {
+    width: 800px;
+    border: 0.1rem solid;
+    padding: 3rem;
+  }
+  .user-form {
+    text-align: center;
+  }
+  button {
+    font-size: 1.6rem;
+    letter-spacing: 0.05rem;
+    padding: 0.5rem 2rem;
+    cursor: pointer;
+  }
+  .info {
+    margin-top: 2rem;
+  }
+}
+
+.form-control {
+  display: grid;
+  grid-template-columns: 10rem auto;
+  margin-bottom: 2rem;
+  input {
+    font-size: 1.6rem;
+  }
+}
